@@ -23,6 +23,7 @@ class IniFile {
 public:
 #if defined(PREFER_SDFAT_LIBRARY)
 	typedef oflag_t mode_t;
+    typedef File32 File;
 #elif defined(ARDUINO_ARCH_ESP32)
 	typedef const char* mode_t;
 #else
